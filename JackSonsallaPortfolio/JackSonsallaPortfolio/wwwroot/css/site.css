@@ -50,6 +50,15 @@ img {
     background-color: #273682;
 }
 
+.bgcolor-purple {
+    background-color: #7a2782;
+}
+
+.bgcolor-white {
+    background-color: white;
+}
+
+
 .fontsize-sm {
     font-size: 12px
 }
@@ -64,6 +73,22 @@ img {
 
 .fontsize-xlg {
     font-size: 32px;
+}
+
+.rowspacing-sm {
+    padding-bottom: 5px;
+}
+
+.rowspacing-md {
+    padding-bottom: 10px;
+}
+
+.rowspacing-lg {
+    padding-bottom: 15px;
+}
+
+.rowspacing-xlg {
+    padding-bottom: 20px;
 }
 /* The sidebar menu */
 .sidenav {
@@ -93,6 +118,11 @@ img {
         display: block;
     }
 
+    .sidenav-active {
+        background-color: white;
+        color: black !important;
+    }
+
     /* When you mouse over the navigation links, change their color */
     .sidenav a:hover {
         color: gray;
@@ -101,7 +131,6 @@ img {
 /* Style page content */
 .main {
     margin-left: 15%; /* Same as the width of the sidebar */
-    padding: 0px 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -113,4 +142,21 @@ img {
         .sidenav a {
             font-size: 18px;
         }
+}
+
+.header-box {
+    height: 75px;
+    width: 97%;
+    color: white;
+}
+
+.header-boxspace {
+    width: 3%;
+}
+
+.header-text {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    font-size: 42px;
 }

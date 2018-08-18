@@ -3,7 +3,6 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
 <div class="sidenav bgcolor-navyblue">
     <div class="sidenav-large">
         <div class="row text-center">
@@ -16,7 +15,7 @@
             Full Stack Developer
         </div>
     </div>
-    <a href="#" class="sidenav-small fontsize-lg">About</a>
+    <a href="#" class="sidenav-small fontsize-lg sidenav-active">About</a>
     <a href="#" class="sidenav-small fontsize-lg">Experiences</a>
     <a href="#" class="sidenav-small fontsize-lg">Projects</a>
     <a href="#" class="sidenav-small fontsize-lg">Skills</a>
@@ -24,8 +23,81 @@
     <a href="#" class="sidenav-small fontsize-lg">Contact</a>
     <a href="#" class="sidenav-small fontsize-lg">Resume</a>
 </div>
+<div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                About
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Experiences
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Projects
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Skills
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Education
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Contact
+            </div>
+        </div>
+    </div>
+    <div class="rowspacing-xlg"></div>
+    <div class="row">
+        <div class="col-lg-1 bgcolor-white header-boxspace"></div>
+        <div class="col-lg-11 header-box bgcolor-navyblue">
+            <div class="header-text">
+                Resume
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rowspacing-xlg"></div>
+
 
 <!-- Page content -->
 <div>
     ...
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(".sidenav-small").on("click", function () {
+        $("a").removeClass("sidenav-active");
+        $(this).addClass("sidenav-active");
+    });
+</script>
